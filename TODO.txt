@@ -1,0 +1,49 @@
+TODO
+
+Input
+------------
+Webscrape financial information (context of agents)
+	Market iteration: refreshes every 6 hours? 12? 24?
+	Isolate x many different factors in financial analysis
+
+Design Agent
+	Each agent has random factors they watch and look for
+	Random number of factors? Allowing Random integers that overlap is a way that we can have up to x many factors, but which simulates some agents focusing on fewer than others. Most likely, any agent not focusing on the maximum number of factors, with no respect to real world research time would have an advantage
+	Object oriented, with factors as attributes
+	Each iteration, agent makes decision to invest / withdraw based on factors
+		Object attributes have method .invest() associated with them
+
+Agent behavior
+	Should Agents have subtypes / controls?
+	One agent can use the martingale strategy, some agents are contrarian?
+
+Populate System with Agents
+	Method / Function by which we can generates 1K / 10K / 100K / etc. agents for simulation
+
+
+F(x)
+-----------
+
+#Simulating may need to be done with C++ (Sam?)
+
+Agents choose random factors
+Watch market trends to see if factors pay off
+n number of agents "survive" in the market
+	factor could be top 1/2? top 1/4? to 1/10?
+
+
+Repitition
+-----------
+
+Shows most successful agents
+Augments process of agent creation to concern agents who focused on more successful factors
+	Could append list with more # of factors which were more focused, increasing the likelihood that the agent will pick factors that are more successful.
+
+
+Output
+-----------
+
+Shows most successful agents, their associated factors, and associated strategies, per iteration
+Documents output to database & csv
+
+
